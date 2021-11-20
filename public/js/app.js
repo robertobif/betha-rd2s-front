@@ -36,6 +36,34 @@ angular
             })
             .when("/pais/new", {
                 templateUrl: "partials/pais-form.html",
+            })            
+            .when("/posicoes", {
+                templateUrl: "partials/posicoes.html",
+            })
+            .when("/posicoes/:id", {
+                templateUrl: "partials/posicoes-form.html",
+            })
+            .when("/posicoes/new", {
+                templateUrl: "partials/posicoes-form.html",
+            })
+                        
+            .when("/quadras", {
+                templateUrl: "partials/quadras.html",
+            })
+            .when("/quadras/:id", {
+                templateUrl: "partials/quadras-form.html",
+            })
+            .when("/quadras/new", {
+                templateUrl: "partials/quadras-form.html",
+            })
+            .when("/usuario", {
+                templateUrl: "partials/usuario.html",
+            })
+            .when("/usuario/:id", {
+                templateUrl: "partials/usuario-form.html",
+            })
+            .when("/usuario/new", {
+                templateUrl: "partials/usuario-form.html",
             })
             .otherwise({
                 templateUrl: "partials/404.html",
