@@ -1,4 +1,4 @@
-<div ng-controller="UsuarioListController as vm">
+<div ng-controller="JogadorListController as vm">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
@@ -6,12 +6,12 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-8">
-                                <h3>Cadastro de Usuarios </h3>
+                                <h3>Cadastro de Jogadores </h3>
                             </div>
                             <div class="col-sm-4">
-                                <a class="btn btn-default pull-right btn-lg" href="usuario/new">
+                                <a class="btn btn-default pull-right btn-lg" href="jogador/new">
                                     <i class="fa fa-plus-square-o" aria-hidden="true"></i>
-                                    <span>Nova Usuario</span>
+                                    <span>Novo Jogador</span>
                                 </a>
                             </div>
                         </div>
@@ -22,22 +22,22 @@
                         <table class="table" style="margin-top: 3em">
                             <thead>
                                 <tr>
-                                    <th>LOGIN</th>
-                                    <th>SENHA</th>
-                                    <th>EMAIL DE RECUPERAÇÃO</th>
+                                    <th>JOGADOR</th>
+                                    <th>POSIÇÃO</th>
+                                    <th>EQUIPE</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr ng-repeat="item in vm.itens">
-                                    <td>{{item.login}}</td>
-                                    <td>{{item.senha}}</td>
-                                    <td>{{item.emailRecuperacao}}</td>
+                                    <td>{{item.jogador}}</td>
+                                    <td>{{item.posicao}}</td>
+                                    <td>{{item.equipe}}</td>
                                     <td>
-                                        <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/usuario/' + item.id}}">
+                                        <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/jogador/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                         </a>
 
-                                        <a type="button" class="btn btn-primary btn-sm" confirmed-click="vm.remover(item)" ng-confirm-click="Deseja excluir a usuario?">
+                                        <a type="button" class="btn btn-primary btn-sm" confirmed-click="vm.remover(item)" ng-confirm-click="Deseja excluir o jogador?">
                                             <i class="fa fa-trash-o" aria-hidden="true"></i>
                                         </a>
                                     </td>

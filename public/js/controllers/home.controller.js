@@ -13,6 +13,10 @@
         vm.estadosPage = estadosPage;
         vm.paisesPage = paisesPage;
         vm.posicoesPage = posicoesPage;
+        vm.quadrasPage = quadrasPage;
+        vm.usuariosPage = usuariosPage;
+        vm.jogadoresPage = jogadoresPage;
+
 
         activate();
 
@@ -32,10 +36,13 @@
             $location.path("/posicoes");
         }
         function quadrasPage() {
-            $location.path("/quadras");
+            $location.path("/quadra");
         }
         function usuariosPage() {
-            $location.path("/usuarios");
+            $location.path("/usuario");
+        }
+        function jogadoresPage() {
+            $location.path("/jogador");
         }
     }
 })();

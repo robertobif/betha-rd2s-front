@@ -45,8 +45,7 @@ angular
             })
             .when("/posicoes/new", {
                 templateUrl: "partials/posicoes-form.html",
-            })
-                        
+            })                        
             .when("/quadras", {
                 templateUrl: "partials/quadras.html",
             })
@@ -64,6 +63,15 @@ angular
             })
             .when("/usuario/new", {
                 templateUrl: "partials/usuario-form.html",
+            })
+            .when("/jogador", {
+                templateUrl: "partials/jogador.html",
+            })
+            .when("/jogador/:id", {
+                templateUrl: "partials/jogador-form.html",
+            })
+            .when("/jogador/new", {
+                templateUrl: "partials/jogador-form.html",
             })
             .otherwise({
                 templateUrl: "partials/404.html",

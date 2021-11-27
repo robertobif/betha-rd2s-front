@@ -22,15 +22,15 @@
                         <table class="table" style="margin-top: 3em">
                             <thead>
                                 <tr>
-                                    <th>NOME</th>
-                                    <th>POLULAÇÃO</th>
-                                    <th>AÇÕES</th>
+                                    <th>DESCRIÇÃO</th>
+                                    <th>SIGLA POSIÇÃO</th>
+                                    <!-- Falta campos USUARIO e USUARIOALT -->
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr ng-repeat="item in vm.itens">
-                                    <td>{{item.nome}}</td>
-                                    <td>{{item.populacao}}</td>
+                                    <td>{{item.descricao}}</td>
+                                    <td>{{item.siglaPosicoes}}</td>
                                     <td>
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/posicoes/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
