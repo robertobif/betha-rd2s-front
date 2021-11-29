@@ -25,13 +25,14 @@
                                     <th>JOGADOR</th>
                                     <th>POSIÇÃO</th>
                                     <th>EQUIPE</th>
+                                    <th>AÇÕES</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr ng-repeat="item in vm.itens">
-                                    <td>{{item.jogador}}</td>
-                                    <td>{{item.posicao}}</td>
-                                    <td>{{item.equipe}}</td>
+                                    <td>{{item.clientes.nome}}</td>
+                                    <td>{{item.posicoes.siglaPosicoes}}</td>
+                                    <td>{{item.equipe.nome}}</td>
                                     <td>
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/jogador/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>

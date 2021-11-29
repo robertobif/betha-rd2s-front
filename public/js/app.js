@@ -73,6 +73,17 @@ angular
             .when("/jogador/new", {
                 templateUrl: "partials/jogador-form.html",
             })
+            
+            .when("/equipe", {
+                templateUrl: "partials/equipe.html",
+            })
+            .when("/equipe/:id", {
+                templateUrl: "partials/equipe-form.html",
+            })
+            .when("/equipe/new", {
+                templateUrl: "partials/equipe-form.html",
+            })
+
             .otherwise({
                 templateUrl: "partials/404.html",
             });

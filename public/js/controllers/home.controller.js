@@ -16,6 +16,7 @@
         vm.quadrasPage = quadrasPage;
         vm.usuariosPage = usuariosPage;
         vm.jogadoresPage = jogadoresPage;
+        vm.equipesPage = equipesPage;
 
 
         activate();
@@ -43,6 +44,9 @@
         }
         function jogadoresPage() {
             $location.path("/jogador");
+        }
+        function equipesPage() {
+            $location.path("/equipe");
         }
     }
 })();
