@@ -17,6 +17,9 @@
         vm.usuariosPage = usuariosPage;
         vm.jogadoresPage = jogadoresPage;
         vm.equipesPage = equipesPage;
+        vm.agendasPage = agendasPage;
+        vm.clientesPage = clientesPage;
+        vm.horariosPage = horariosPage;
 
 
         activate();
@@ -47,6 +50,15 @@
         }
         function equipesPage() {
             $location.path("/equipe");
+        }
+        function agendasPage() {
+            $location.path("/agenda");
+        }
+        function clientesPage() {
+            $location.path("/cliente");
+        }
+        function horariosPage() {
+            $location.path("/horario");
         }
     }
 })();

@@ -84,6 +84,36 @@ angular
                 templateUrl: "partials/equipe-form.html",
             })
 
+            .when("/agenda", {
+                templateUrl: "partials/agenda.html",
+            })
+            .when("/agenda/:id", {
+                templateUrl: "partials/agenda-form.html",
+            })
+            .when("/agenda/new", {
+                templateUrl: "partials/agenda-form.html",
+            })
+
+            .when("/cliente", {
+                templateUrl: "partials/cliente.html",
+            })
+            .when("/cliente/:id", {
+                templateUrl: "partials/cliente-form.html",
+            })
+            .when("/cliente/new", {
+                templateUrl: "partials/cliente-form.html",
+            })
+
+            .when("/horario", {
+                templateUrl: "partials/horario.html",
+            })
+            .when("/horario/:id", {
+                templateUrl: "partials/horario-form.html",
+            })
+            .when("/horario/new", {
+                templateUrl: "partials/horario-form.html",
+            })
+
             .otherwise({
                 templateUrl: "partials/404.html",
             });
